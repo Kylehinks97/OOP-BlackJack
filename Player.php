@@ -2,12 +2,17 @@
 
 class Player
 {
+    private $name;
     private $hand = [];
     private $score = 0;
 
+    public function __construct($name) {
+        $this->name = $name;
+    }
+
     public function hit(Card $card)
     {
-        $this->hand = $card;
+        $this->hand[] = $card;
         $this->calculateScore();
     }
 
@@ -35,6 +40,10 @@ class Player
 
     public function getScore() {
         return $this->score;
+    }
+
+    public function getName() {
+        return $this->name;
     }
 
     public function getHand()

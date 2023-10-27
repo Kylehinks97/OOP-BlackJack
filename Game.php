@@ -11,8 +11,8 @@ class Game {
 
     public function __construct()
     {
-        $this->player = new Player();
-        $this->dealer = new Player();
+        $this->player = new Player('Player 1');
+        $this->dealer = new Player('Dealer');
         $this->deck = new Deck();
     }
 
@@ -27,6 +27,10 @@ class Game {
     public function getPlayer()
     {
         return $this->player;
+    }
+
+    public function getDeck() {
+        return $this->deck;
     }
 
     public function getDealer()

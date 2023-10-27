@@ -16,9 +16,9 @@ class Deck
         }
     }
 
-    public function shuffle($cards)
+    public function shuffle()
     {
-        return shuffle($cards);
+        shuffle($this->cards);
     }
 
     public function getCards()
