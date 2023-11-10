@@ -27,8 +27,8 @@ $newPlayerScore = $player->getScore();
 
 print_r($player->getHand());
 
-echo $newPlayerScore > 21 ? 'Bust!' : $newPlayerScore . 'Hit Again?'
+echo $newPlayerScore > 21 ? 'Bust!' : $newPlayerScore . 'Hit Again?';
 
-
+print 'Hi';
 
 ?>

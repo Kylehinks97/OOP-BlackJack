@@ -1,0 +1,11 @@
+{
+    "name": "kylehinks97/oop-blackjack",
+    "autoload": {
+        "psr-4": {
+            "Kylehinks97\\OopBlackjack\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.4"
+    }
+}
